@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tweets',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,8 +58,8 @@ WSGI_APPLICATION = 'twttr.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.path.join(BASE_DIR, 'twttr.postgresql'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'twttr.sqlite3'),
     }
 }
 
